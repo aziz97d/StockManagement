@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/close_image_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:layout_gravity="right"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Out"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add_company" />
+
+        <Spinner
+            android:id="@+id/stock_out_company_spinner_id"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            >
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add_category" />
+
+        <Spinner
+            android:id="@+id/stock_out_item_spinner_id"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            >
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_stock_in_list" />
+
+        <TextView
+            android:id="@+id/stock_out_reorder_level_id"
+            android:hint="Reorder level"
+            android:textSize="18sp"
+            android:textColorHint="#ffff"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_available_quantity" />
+
+        <TextView
+            android:id="@+id/stock_out_available_quantity_id"
+            android:hint="Available Quantity"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColorHint="#ffff"
+            android:paddingLeft="10dp"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_stock_in" />
+
+
+        <EditText
+            android:id="@+id/stock_out_quantity_id"
+            android:textColorHint="#ffff"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Stock Out Quantity"
+            android:paddingLeft="10dp"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/stock_out_sell_button"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Sell"
+            android:background="@drawable/save_button_shape"
+            android:textAllCaps="false"
+            android:textColor="#c845c6"
+            android:textSize="18sp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/stock_out_damage_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:background="@drawable/sell_button_shape"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="Damage"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/stock_out_lost_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:background="@drawable/sell_button_shape"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="Lost"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>

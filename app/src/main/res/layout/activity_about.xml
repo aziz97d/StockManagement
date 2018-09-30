@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/about_background"
+    tools:context=".AboutActivity">
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app developed by Abdul Aziz"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_about"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Abdul Aziz"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:autoLink="web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.fb.com/Aziz12d97"
+        android:textSize="19sp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:autoLink="web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.twitter.com/aziz97d"
+        android:textSize="19sp"
+        android:textColor="#000000"
+        />
+
+</LinearLayout>

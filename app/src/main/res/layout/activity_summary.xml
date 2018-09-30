@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".SummaryActivity">
+
+    <EditText
+        android:id="@+id/dateEDT"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:hint="Select Date Here"
+        android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/typeRadioGroup"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/sellRadioButton"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                /><RadioButton
+                android:id="@+id/damageRadioButton"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damage"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                /><RadioButton
+                android:id="@+id/lostRadioButton"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lost"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            
+        </RadioGroup>
+    <Button
+        android:id="@+id/showChartButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Show Chart"
+        android:layout_gravity="center"
+        android:background="@drawable/save_button_shape"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <me.ithebk.barchart.BarChart
+            android:id="@+id/bar_chart_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            app:bar_width="40dp"
+            app:bar_color="@color/colorPrimary"
+            app:bar_text_color="#808080"
+            app:bar_text_size="9sp"
+            app:bar_show_auto_color="false"
+            app:bar_show_value="true"
+            app:bar_show_animation="true"
+            android:scrollbars="horizontal"
+            >
+
+
+        </me.ithebk.barchart.BarChart>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

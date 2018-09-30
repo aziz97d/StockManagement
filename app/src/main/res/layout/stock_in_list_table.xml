@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:gravity="center"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_width="110dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_marginLeft="110dp"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/compnay_name"
+            android:text="Company"
+            android:textStyle="bold"
+            android:layout_marginLeft="170dp"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:text="Date"
+            android:textStyle="bold"
+            android:layout_marginLeft="280dp"
+            android:gravity="center"
+            android:layout_width="130dp"
+            android:layout_height="60dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
